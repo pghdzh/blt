@@ -4,7 +4,7 @@
     @keydown.space.prevent="onSpace"
     tabindex="0"
     ref="rootEl"
-    aria-label="尤诺 音乐播放器"
+    aria-label="布兰特 音乐播放器"
   >
     <div class="stage">
       <!-- 左侧：封面与控制 -->
@@ -269,7 +269,7 @@ const progressPercent = computed(() =>
     : 0
 );
 
-// 封面渐变（尤诺风格）
+// 封面渐变（布兰特风格）
 const coverStyle = computed(() => {
   const t = current.value?.title || "cantarella";
   let hash = 0;
@@ -595,7 +595,7 @@ function globalKeydown(e: KeyboardEvent) {
 </script>
 
 <style scoped lang="scss">
-/* 颜色与变量（尤诺风格）*/
+/* 颜色与变量（布兰特风格）*/
 $bg-dark: #050714;
 $bg-deep: #071028;
 

@@ -25,7 +25,7 @@
         <h1>留言板</h1>
         <span class="title-count">（共{{ count }}条）</span>
 
-        <p class="subtitle">寄心于月，诉忆成文</p>
+        <p class="subtitle">喝彩未歇，航程不灭</p>
       </div>
     </header>
 
@@ -339,7 +339,7 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped lang="scss">
-/* 尤诺色板（变量名保持不变） */
+/* 布兰特色板（变量名保持不变） */
 $bg-start: #050714; // 深海夜色（更冷的湮灭底）
 $bg-end: #071028; // 次深底（深紫-海蓝过渡）
 
@@ -575,7 +575,7 @@ $blood-halo: rgba(255, 122, 163, 0.04); // 毒色/点缀（保留少量粉红-�
     }
   }
 
-  /* ---------- 单条消息卡片（尤诺风） ---------- */
+  /* ---------- 单条消息卡片（布兰特风） ---------- */
   .message-card {
     background: linear-gradient(
       180deg,

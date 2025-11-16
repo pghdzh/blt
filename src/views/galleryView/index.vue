@@ -80,7 +80,7 @@
           <ul class="tips-list">
             <li>
               审核规则： 1.不要色情倾向（不要露三点，我怕被封）
-              2.要我能认出是尤诺。
+              2.要我能认出是布兰特。
             </li>
             <li>
               由于没有用户系统，我这边不好做审核反馈，但只要显示上传成功，我这边肯定能收到。
@@ -209,7 +209,7 @@ const page = 1;
 const pageSize = 99;
 
 const fetchRanking = async () => {
-  const res = await getRankingList({ page, pageSize, character_key: "feibi" });
+  const res = await getRankingList({ page, pageSize, character_key: "blt" });
   if (res.success) {
     rankingList.value = res.data;
   } else {
@@ -256,7 +256,7 @@ async function loadNextPage() {
       page: pageImage.value,
       limit: limit.value,
       sortBy: sortBy.value,
-      character_key: "feibi",
+      character_key: "blt",
       order: order.value,
     });
     imgTotal.value = res.total;
@@ -418,7 +418,7 @@ async function submitUpload() {
     const res = await uploadImages(
       selectedFiles.value,
       nickname.value.trim(),
-      "feibi"
+      "blt"
     );
     const uploadedCount = res.data.length;
     // 更新 localStorage
@@ -465,7 +465,7 @@ onMounted(async () => {
     sentinelObserver.observe(sentinel.value);
   }
   // 1. 基础配置信息
-  const total = 11;
+  const total = 6;
   let pickCount = 3; // 每次抽取 3 张
   const vw = window.innerWidth;
   const vh = window.innerHeight;
@@ -575,7 +575,7 @@ onBeforeUnmount(() => {
 </script>
 
 <style lang="scss" scoped>
-$bg: #050714; // 深海夜色（尤诺风）
+$bg: #050714; // 深海夜色（布兰特风）
 $accent-1: #923257; // 暗紫主光（冷雅）
 $accent-2: #70a7bb; // 冷海蓝高光（湿光感）
 
@@ -1231,7 +1231,7 @@ $halo: rgba($accent-1, 0.06);
     }
   }
 
-  /* 右侧排行面板：尤诺风格（清冷冰蓝 + 圣光金 + 深海暗蓝），已写实颜色（无变量）*/
+  /* 右侧排行面板：布兰特风格（清冷冰蓝 + 圣光金 + 深海暗蓝），已写实颜色（无变量）*/
   .ranking-panel {
     width: 220px;
     padding: 16px;
@@ -1393,7 +1393,7 @@ $halo: rgba($accent-1, 0.06);
       }
 
       /* 冠军样式：冰蓝 -> 钢蓝 -> 深海蓝，辅以微金光晕（无紫色） */
-      /* === 尤诺风格名次卡 === */
+      /* === 布兰特风格名次卡 === */
       /* 布兰特风格 —— 已移除 mix()，直接使用具体色值 */
       &.rank-1 {
         position: relative;

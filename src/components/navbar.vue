@@ -1,6 +1,6 @@
 <template>
   <header class="app-header">
-    <h1 class="title">尤诺电子设定集</h1>
+    <h1 class="title">布兰特电子设定集</h1>
     <!-- 在线人数展示 -->
     <div class="online-count" v-if="onlineCount !== null">
       当前在线：<span class="count">{{ onlineCount }}人</span>
@@ -48,14 +48,14 @@ import { ref, onMounted, onBeforeUnmount } from "vue";
 import { io } from "socket.io-client";
 
 const navItems = [
-  { name: "月谕初临", path: "/" }, // 首页 - 寓意与尤诺的初次相遇
-  { name: "命途窥览", path: "/timeLine" }, // 年谱 - 暗示她能窥见命运轨迹
-  { name: "独忆残响", path: "/message" }, // 留言板 - 指向她“被遗忘”的悲剧与记忆
-  { name: "月相流转", path: "/gallery" }, // 图集 - 呼应她与月亮的关联及形态变化
-  { name: "忆骸拾遗", path: "/resources" }, // 资料库 - 贴合“收集残存记忆”的意象
-  { name: "谕示之镜", path: "/talk" }, // AI对话页面 - 体现她“谕女”的身份与预言能力
-  { name: "空灵回响", path: "/voice" }, // 语音彩蛋页面 - 强调她存在消失后留下的“回响”
-  { name: "月光契文", path: "/music" }, // 歌曲库 - 结合月光主题与律动感
+  { name: "启航！愚人剧团！", path: "/" },
+  { name: "船长日志", path: "/timeLine" },
+  { name: "喝彩与留声", path: "/message" },
+  { name: "剧团相簿", path: "/gallery" },
+  { name: "航海图与宝藏", path: "/resources" },
+  { name: "火焰絮语", path: "/talk" },
+  { name: "船舱絮语", path: "/voice" },
+  { name: "火焰归亡曲", path: "/music" },
 ];
 
 const mobileNavOpen = ref(false);
@@ -63,7 +63,7 @@ function toggleMobileNav() {
   mobileNavOpen.value = !mobileNavOpen.value;
 }
 
-const siteId = "feibi";
+const siteId = "blt";
 
 const onlineCount = ref<number | null>(null);
 
@@ -89,7 +89,7 @@ onBeforeUnmount(() => {
   --deep-bg: rgba(10, 6, 20, 0.96); /* 深夜舞台 */
   --spotlight: rgba(106, 76, 255, 0.06); /* 紫光薄光 */
   --accent: #923257; /* 主光：皇家紫蓝 */
-  --accent-2: #70A7BB; /* 次级：淡蔚蓝 / 紫罗兰偏冷 */
+  --accent-2: #70a7bb; /* 次级：淡蔚蓝 / 紫罗兰偏冷 */
   --glow: #bfa8ff; /* 柔和高光 */
   --gold-accent: #ffd78a; /* 金色点缀 */
   --muted-text: #f6f4ff; /* 近白带紫 */

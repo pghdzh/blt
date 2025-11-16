@@ -16,8 +16,8 @@
       <header class="vg__header">
         <div class="logo">
           <div class="title-group">
-            <h1 class="title">尤诺 · 语音馆</h1>
-            <p class="subtitle">月下低语，为你而存</p>
+            <h1 class="title">布兰特 · 语音馆</h1>
+            <p class="subtitle">和布兰特对话有概率解锁语音彩蛋哦</p>
           </div>
         </div>
       </header>
@@ -81,7 +81,7 @@
 import { ref, computed, onMounted, onBeforeUnmount, watch } from "vue";
 import { Download } from "@element-plus/icons-vue";
 /* ================== 配置 ================== */
-const TOTAL_VOICES = 21; // 语音总数，按实际替换
+const TOTAL_VOICES = 19; // 语音总数，按实际替换
 const BG_INTERVAL_MS = 4500; // 背景切换间隔（毫秒）
 const MOBILE_BREAKPOINT = 720; // 小于这个宽度视为移动端
 /* ========================================= */

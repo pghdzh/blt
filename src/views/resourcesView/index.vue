@@ -21,7 +21,7 @@
     <header class="hero">
       <div class="hero-inner">
         <h1>资源分享</h1>
-        <p class="subtitle">可自由上传关于尤诺的相关链接</p>
+        <p class="subtitle">可自由上传关于布兰特的相关链接</p>
       </div>
     </header>
 
@@ -167,7 +167,7 @@ interface Resource {
 }
 
 const STORAGE_KEY = "fll_resources_v1";
-const DEFAULT_ROLE = "feibi";
+const DEFAULT_ROLE = "blt";
 
 const form = ref<{
   title: string;
