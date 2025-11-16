@@ -1,0 +1,124 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 128 128"
+  role="img"
+  aria-labelledby="title desc"
+>
+  <title id="title">鸣潮 · 布兰特（图标修正版）</title>
+  <desc id="desc">
+    紫蓝舞台背景，简化面具轮廓（窄下颌、杏仁眼），金色描边与聚光点缀，适合作为
+    vite.svg
+  </desc>
+
+  <defs>
+    <!-- 背景渐变（使用你给的色） -->
+    <linearGradient id="bgG" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#923257" />
+      <stop offset="100%" stop-color="#70A7BB" />
+    </linearGradient>
+
+    <!-- 面具主体渐变 -->
+    <linearGradient id="maskG" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#5a2f57" />
+      <stop offset="70%" stop-color="#9ba0ff" />
+    </linearGradient>
+
+    <!-- 金色描边 -->
+    <linearGradient id="goldG" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ffd78a" />
+      <stop offset="100%" stop-color="#ffdaaa" />
+    </linearGradient>
+
+    <!-- 顶部聚光 -->
+    <radialGradient id="spotG" cx="50%" cy="18%" r="60%">
+      <stop
+        offset="0%"
+        stop-color="#bfa8ff"
+        stop-opacity="0.28"
+      />
+      <stop
+        offset="60%"
+        stop-color="#6a4cff"
+        stop-opacity="0.06"
+      />
+      <stop offset="100%" stop-color="#000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- 轻阴影 -->
+    <filter id="ds" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow
+        dx="0"
+        dy="5"
+        stdDeviation="5"
+        flood-color="#000"
+        flood-opacity="0.5"
+      />
+    </filter>
+
+    <!-- 小圆点（装饰） -->
+    <symbol id="dot" viewBox="0 0 4 4">
+      <circle cx="2" cy="2" r="2" fill="currentColor" />
+    </symbol>
+  </defs>
+
+  <!-- 圆角背景块 -->
+  <rect
+    width="128"
+    height="128"
+    rx="18"
+    ry="18"
+    fill="url(#bgG)"
+  />
+
+  <!-- 底部轻投影 -->
+  <ellipse
+    cx="64"
+    cy="116"
+    rx="30"
+    ry="5"
+    fill="rgba(0,0,0,0.26)"
+  />
+
+  <!-- 面具主体（收尖下颌、避免圆鼻）-->
+  <g filter="url(#ds)">
+    <path
+      d="M30 50
+C30 38, 44 30, 64 30
+C84 30, 98 38, 98 50
+C98 62, 86 76, 72 84
+C66 88, 62 90, 64 92
+C66 90, 62 88, 56 84
+C42 76, 30 62, 30 50 Z"
+      fill="url(#maskG)"
+    />
+  </g>
+
+  <!-- 眼洞（杏仁形，斜上扬，避免圆形鼻感）-->
+  <g fill="#0b0810">
+    <path
+      d="M44 54 C47 50, 55 50, 58 54 C55 52, 47 52, 44 54 Z"
+    />
+    <!-- 左眼 -->
+    <path
+      d="M70 54 C73 50, 81 50, 84 54 C81 52, 73 52, 70 54 Z"
+    />
+    <!-- 右眼 -->
+  </g>
+
+  <!-- 眼洞细描边（更锐利）-->
+  <g stroke="rgba(0,0,0,0.35)" stroke-width="0.6" fill="none">
+    <path d="M44 54 C47 50, 55 50, 58 54" />
+    <path d="M70 54 C73 50, 81 50, 84 54" />
+  </g>
+
+
+  <!-- 中央微光竖线（弱） -->
+  <path
+    d="M64 36 L64 78"
+    stroke="rgba(255,215,138,0.14)"
+    stroke-width="0.9"
+    stroke-linecap="round"
+  />
+
+
+</svg>
